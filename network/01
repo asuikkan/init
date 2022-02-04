@@ -1,0 +1,2 @@
+#!/bin/sh
+ifconfig | sed '/^	/d' | cut -d : -f 1

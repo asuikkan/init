@@ -1,0 +1,3 @@
+#!/bin/sh
+ifconfig en0 | sed -n 's/^.*broadcast //p'
+arp -a | sed '/permanent/d' | sed 's/.*(\(.*\)).*/\1/'
