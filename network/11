@@ -1,0 +1,2 @@
+The first node is the address of the router, which then uses NAT to change the address from a private address to a public one
+Hence, the answer is nat and its address is 10.60.1.1

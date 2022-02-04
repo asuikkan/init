@@ -1,0 +1,2 @@
+#!/bin/sh
+traceroute who.int | sed 's/....\([^ ]*\).*/\1/'
