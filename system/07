@@ -1,0 +1,1 @@
+ps aux | sed -n 's/[^0-9]*\([0-9]*\).*\/usr\/sbin\/sshd.*/\1/p'
