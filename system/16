@@ -1,0 +1,4 @@
+- write a shell script or executable program for the desired task
+- write a text file that specifies the time for when to execute the script/program
+    - e.g. 30 12 * * * script/program name (google crontab for the syntax explanation)
+- use crontab to submit the file, e.g. crontab textfile
