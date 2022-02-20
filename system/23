@@ -1,0 +1,7 @@
+Add a new user with, for example, adduser
+Use command: su - username to connect as the new user
+
+To connect via SSH, create user on the remote server
+Add that user to sudoers file on the remote server
+Add your public key (~/.ssh/id_rsa.pub) to the new user's ~/.ssh/authorized_keys file on the remote server
+Connect with command: ssh newuser@remoteserver
