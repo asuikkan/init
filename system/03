@@ -1,1 +1,2 @@
-/etc/hosts
+renaming system with hostnamectl also modifies the /etc/hostname file
+/etc/hosts file has to be modified manually

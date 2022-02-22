@@ -1,0 +1,20 @@
+#!/bin/sh
+echo 'Active users:'
+who | cut -d ' ' -f 1
+echo 'Which user do you want to delete?'
+read username
+if [ $username = '' ]
+then
+        echo 'User not specified'
+else
+        echo 'Are you sure? [Y/N]'
+        read answer
+        if [ $answer = 'Y' ]
+        then
+                killall -KILL -u $username
+                userdel -rf $username
+                echo 'User deleted'
+        else
+                echo 'User not deleted'
+        fi
+fi

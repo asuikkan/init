@@ -1,0 +1,6 @@
+#!/bin/sh
+echo 'Group list:'
+cat /etc/group | cut -d : -f 1
+echo 'Which group do you want to check?'
+read group
+awk -v grp="$group" -F ':' '$1~grp {print $4}' /etc/group
